@@ -7,7 +7,7 @@ Let us take swaptions as an example. By assuming that the underlying forward swa
 
 The market practice to this issue (also named as the volatility skews) has yielded a general approach: link implied volatilities to strikes. Now, some brokers provide 3-D matrix as an indicative volatility level for different strikes.
 
-This note describes how to utilize broker’s information to get strike-adjusted implied volatility for general terms. The implied volatility surface is important for valuing derivatives, such as callables (see https://finpricing.com/lib/EqCallable.html)
+This note describes how to utilize broker’s information to get strike-adjusted implied volatility for general terms. The implied volatility surface is important for valuing derivatives.
 
 This is a matrix of at-the-money swaption volatilities with rows at different option terms, and columns of swap tenors. Table 1 shows one example of this matrix. Notice that the first tenor is 3-month, which represents 3-month forward volatility.
  
@@ -118,4 +118,7 @@ Our method is:
 
 This method will correctly reflect the true hedging costs if American/Bermudan swaptions are hedged by European swaptions.
 
+Reference:
+
+https://finpricing.com/curveVolList.html
 
